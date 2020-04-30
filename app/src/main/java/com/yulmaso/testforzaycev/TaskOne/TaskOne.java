@@ -3,7 +3,7 @@ package com.yulmaso.testforzaycev.TaskOne;
 /**
  * Created by Plotnikov Alexey on 30/04/2020.
  *
- * Unit-тест для запуска - ZaycevUnitTest
+ * Unit-тест для запуска - ZaycevUnitTest.taskOne_isCorrect()
  */
 public class TaskOne {
     public static void main() {

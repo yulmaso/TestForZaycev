@@ -7,7 +7,7 @@ import androidx.annotation.Nullable;
 /**
  * Created by Plotnikov Alexey on 30/04/2020.
  *
- * Unit-тест для проверки - ZaycevUnitTest
+ * Unit-тест для проверки - ZaycevUnitTest.taskTwo_isCorrect()
  */
 public class TaskTwo {
     public @Nullable
