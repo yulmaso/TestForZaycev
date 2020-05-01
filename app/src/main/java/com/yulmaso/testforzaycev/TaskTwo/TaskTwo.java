@@ -19,19 +19,16 @@ public class TaskTwo {
                       @IntRange(from = 0) int offset,
                       @IntRange(from = 1) int readLength) {
 
-        //Защита от ArrayOutOfBoundsException
+        //Защита от ArrayOutOfBoundsException при offset + readLength > price.length
         int a = offset + readLength;
         int end = Math.min(a, price.length);
 
         int[] result = new int[end - offset];
 
         for (int i = offset, k = 0; i < end; i++, k++ ) {
-            if (i < price.length) {
                 result[k] = (int) (price[i] * discount * 0.01);
-            } else {
-                break;
-            }
         }
+
         return result;
     }
 }
