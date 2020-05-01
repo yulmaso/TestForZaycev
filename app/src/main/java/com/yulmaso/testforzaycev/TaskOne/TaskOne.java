@@ -9,7 +9,7 @@ public class TaskOne {
     public static void main() {
         User tester = new User(7, new Vacancy("Developer"));
         System.out.println(tester.getId());
-        System.out.println(tester.getVacancy());
+        System.out.println(tester.getVacancy().getPosition());
     }
 }
 
@@ -22,23 +22,23 @@ class User {
         this.vacancy = vacancy;
     }
 
-    String getVacancy() {
-        return vacancy.getVacancy();
-    }
-
     long getId() {
         return id;
+    }
+
+    public Vacancy getVacancy() {
+        return vacancy;
     }
 }
 
 class Vacancy {
-    private String vacancy;
+    private String position;
 
-    public Vacancy(String vacancy) {
-        this.vacancy = vacancy;
+    public Vacancy(String position) {
+        this.position = position;
     }
 
-    String getVacancy() {
-        return vacancy;
+    String getPosition() {
+        return position;
     }
 }
